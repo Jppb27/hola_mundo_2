@@ -8,6 +8,7 @@ public class Motor {
 
     }
 
+
     public Motor(int cilindraje, int numValvulas, String combustible) {
         this.cilindraje = cilindraje;
         this.numValvulas = numValvulas;

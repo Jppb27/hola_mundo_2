@@ -1,12 +1,12 @@
 public class Auto {
-    String color;
-    int puertas;
-    String placas;
-    String modelo;
-    int numLlantas;
+      private String color;
+    private int puertas;
+    private String placas;
+    private String modelo;
+    private int numLlantas;
 
-    Motor motor;
-    Dueno dueno;
+    private Motor motor;
+   private Dueno dueno;
     public Auto(){
 
 }
@@ -31,4 +31,59 @@ public Auto(String color,int puertas,String placas, String modelo, int numLlanta
     velocidadKh=motor.fuerza()*numLlantas;
     return velocidadKh;
 }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getPuertas() {
+        return puertas;
+    }
+
+    public void setPuertas(int puertas) {
+        this.puertas = puertas;
+    }
+
+    public String getPlacas() {
+        return placas;
+    }
+
+    public void setPlacas(String placas) {
+        this.placas = placas;
+    }
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public int getNumLlantas() {
+        return numLlantas;
+    }
+
+    public void setNumLlantas(int numLlantas) {
+        this.numLlantas = numLlantas;
+    }
+
+    public Motor getMotor() {
+        return motor;
+    }
+
+    public void setMotor(Motor motor) {
+        this.motor = motor;
+    }
+
+    public Dueno getDueno() {
+        return dueno;
+    }
+
+    public void setDueno(Dueno dueno) {
+        this.dueno = dueno;
+    }
 }
