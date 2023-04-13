@@ -1,6 +1,6 @@
 public class Dueno {
-    String cedula;
-    String nombre;
+    private String cedula;
+    private String nombre;
 
     public Dueno() {
     }

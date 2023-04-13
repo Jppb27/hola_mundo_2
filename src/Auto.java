@@ -3,6 +3,7 @@ public class Auto {
     private int puertas;
     private String placas;
     private String modelo;
+    private int anio;
     private int numLlantas;
 
     private Motor motor;
@@ -10,7 +11,13 @@ public class Auto {
     public Auto(){
 
 }
-public Auto(String color,int puertas,String placas, String modelo, int numLlantas,Motor motor, Dueno dueno){
+// constructores
+    public Auto(Motor motor, Dueno dueno) {
+        this.motor = motor;
+        this.dueno = dueno;
+    }
+
+    public Auto(String color, int puertas, String placas, String modelo, int numLlantas, Motor motor, Dueno dueno){
         this.color=color;
         this.puertas=puertas;
         this.placas=placas;
@@ -32,6 +39,14 @@ public Auto(String color,int puertas,String placas, String modelo, int numLlanta
     return velocidadKh;
 }
 
+    public int getAnio() {
+        return anio;
+    }
+    public void setAnio(int anio) {
+        this.anio = anio;
+    }
+// fin de los constructores
+    //geter and setter
     public String getColor() {
         return color;
     }
@@ -86,4 +101,5 @@ public Auto(String color,int puertas,String placas, String modelo, int numLlanta
     public void setDueno(Dueno dueno) {
         this.dueno = dueno;
     }
+
 }
