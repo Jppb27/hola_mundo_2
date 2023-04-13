@@ -17,6 +17,10 @@ public class Auto {
         this.dueno = dueno;
     }
 
+    public Auto(int anio) {
+        this.anio = anio;
+    }
+
     public Auto(String color, int puertas, String placas, String modelo, int numLlantas, Motor motor, Dueno dueno){
         this.color=color;
         this.puertas=puertas;
@@ -47,6 +51,7 @@ public class Auto {
     }
 // fin de los constructores
     //geter and setter
+
     public String getColor() {
         return color;
     }
@@ -101,5 +106,17 @@ public class Auto {
     public void setDueno(Dueno dueno) {
         this.dueno = dueno;
     }
+public void imprimirAttr(){
+    System.out.println("La placa del auto es: "+placas);
+    System.out.println("Modelo: "+modelo);
+    System.out.println("Año: "+anio);
+    System.out.println("Marca: "+numLlantas);
+    System.out.println("La serie del motor es: "+motor.getSerie());
+    System.out.println("Combustible: "+motor.getCombustible());
+    System.out.println("Cilindraje: "+motor.getCilindraje());
+    System.out.println("Nombre: "+dueno.getNombre());
+    System.out.println("Cedula: "+dueno.getCedula());
+    System.out.println("Puertas: "+puertas);
 
+}
 }
